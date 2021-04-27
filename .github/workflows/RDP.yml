@@ -41,7 +41,7 @@ jobs:
 
     - name: Assign User
 
-      run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Exynos300806" -Force)
+      run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "Techguy20" -Force)
 
     - name: Create Tunnel
 
@@ -49,7 +49,7 @@ jobs:
 
     - name: Download Timeout Script
 
-      run: Invoke-WebRequest https://raw.githubusercontent.com/pkpropk/pk/main/timeout.ps1 -OutFile timeout.ps1
+      run: Invoke-WebRequest https://raw.githubusercontent.com/shieldwhite/timeout/WhiteShield/timeout.ps1 -OutFile timeout.ps1
 
     - name: Keep Alive
 
