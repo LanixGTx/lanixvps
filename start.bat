@@ -8,7 +8,7 @@ REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" 
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v Wallpaper /t REG_SZ /d D:\a\wallpaper.bat
 
-net user administrator ExynosAdmin /add >nul
+net user administrator Exynos300806 /add >nul
 
 net localgroup administrators administrator /add >nul
 
@@ -32,9 +32,9 @@ echo IP:
 
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Tidak bisa mendapatkan NGROK tunnel, pastikan NGROK_AUTH_TOKEN benar di Settings> Secrets> Repository secret. Mungkin VM Anda sebelumnya masih berjalan: https://dashboard.ngrok.com/status/tunnels "
 
-echo Username: Administrator
+echo Username: administrator
 
-echo Password: ExynosAdmin
+echo Password: Exynos300806
 
 echo Silahkan Login Ke RDP Anda Sekarang
 
